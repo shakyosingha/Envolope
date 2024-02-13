@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <video playsinline autoplay muted loop poster="1.jpg" id="bgvid">
+        <source src="1.jpg" type="video/mp4">
+        <source src="1.jpg" type="video/mp4">
+      </video>
+
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Mon,</strong>
+                        <p>
+                            My love, on Valentine's Day, I cherish you more than ever. 
+                            You're my sunshine, my joy, my everything. Here's to us, forever and always. 
+                            Happy Valentine's Day.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
